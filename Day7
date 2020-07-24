@@ -1,0 +1,11 @@
+n=int(input())
+for i in range(n):
+    m=input()
+    odd_char=""
+    even_char=""
+    for j in range(len(m)):
+        if j%2==0:
+            even_char+=m[j]
+        else:
+            odd_char+=m[j]
+    print(even_char,odd_char)
