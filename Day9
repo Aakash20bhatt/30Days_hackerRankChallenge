@@ -1,0 +1,16 @@
+#Dictionaries and Maps
+
+
+import sys
+n=int(input())
+d={}
+for i in range(n):
+    p=input().split()
+    d[p[0]]=p[1]
+query=sys.stdin.readlines()
+for i in query:
+    name=i.strip()
+    if name in d:
+        print(name+"="+d[name])
+    else:
+        print("Not found")
