@@ -1,0 +1,24 @@
+#Binary Number
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    n = int(input())
+    c=0
+    max_count=0
+    while n>0:
+        r=n%2
+        if r==1:
+            c+=1
+            if c>max_count:
+                max_count=c
+        else:
+            c=0
+        n=n//2
+    print(max_count)
